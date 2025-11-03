@@ -1,0 +1,56 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: linear-gradient(45deg, #36d1dc, #5b86e5); 
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+.main-container {
+  margin: 2rem 2rem 0 2rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 🖥️ Default: 4 คอลัมน์ */
+  gap: 5rem;
+}
+
+.topic {
+  text-align: center;
+  background: white;
+  color: rgb(71, 65, 65);
+  margin: 2rem 2rem 0 2rem;
+  padding: 2px 0;
+  border-radius: 15px;
+}
+
+.line-basic {
+  border: none;
+  height: 4px;
+  background: linear-gradient(90deg, #00f5ff, #ff00f7);
+  box-shadow: 0 0 10px #00f5ff, 0 0 20px #ff00f7;
+  border-radius: 5px;
+  width: 95%;
+  margin: 30px auto;
+}
+
+@media (max-width: 900px) {
+  .main-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
