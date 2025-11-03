@@ -19,7 +19,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 🖥️ Default: 4 คอลัมน์ */
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .topic {
